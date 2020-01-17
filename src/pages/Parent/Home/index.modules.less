@@ -1,0 +1,149 @@
+.index {
+  position: relative;
+  flex-direction: column;
+  width: 100%;
+  
+  .top {
+    width: 100%;
+    height: 360px;
+    text-align: center;
+    background: url('../../../assets/parent/user_card_bg.png') center no-repeat;
+    background-color: #03C46B;
+    .avatar {
+      width: 160px;
+      height: 160px;
+      background: #fff;
+      border-radius: 80px;
+    }
+    .userName {
+      color: #fff;
+    }
+    .gaoAccount {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 232px;
+      height: 48px;
+      line-height: 48px;
+      margin: 30px auto 0;
+      border-radius: 28px;
+      background-color: #FFFDD8;
+      .logo {
+        width: 32px;
+        height: 32px;
+      }
+      .txt {
+        height: 100%;
+        color: #FFB400;
+        font-size: 28px;
+      }
+    }
+  }
+
+  .addStudentView {
+    padding-top: 100px;
+    text-align: center;
+    .tip {
+      padding: 40px 0;
+      color: #888;
+      font-size: 32px;
+    }
+    .addBtn {
+      width: 320px;
+      height: 90px;
+      margin: 0 auto;
+      line-height: 90px;
+      color: #fff;
+      background:rgba(255,180,0,1);
+      box-shadow:0px 2px 5px 0px rgba(255,180,0,0.5);
+      border-radius:50px;
+    }
+  }
+
+  .list {
+    padding: 30px 30px;
+    .swipe {
+      overflow: visible;
+    }
+    .option {
+      display: block;
+      width: 100px;
+      height: 100px;
+      padding: 0 0;
+      color: #fff;
+      text-align: center;
+      line-height: 100px;
+      background-color: #FF6E4A;
+      border-radius: 50%;
+    }
+    .cell {
+      margin-bottom: 20px;
+      padding: 30px 30px;
+      // min-height:148px;
+      background:rgba(255,255,255,1);
+      box-shadow:0px 2px 6px 0px rgba(0,0,0,0.1);
+      border-radius:6px;
+
+      .name {
+        color: #333;
+        font-size: 36px;
+      }
+      .des {
+        padding-top: 20px;
+        color: #B2B2B2;
+        font-size: 26px;
+      }
+
+      .campusItem {
+        padding: 20px 0;
+        border-bottom: 2px solid #E5E5E5;
+        &:last-child {
+          padding-bottom: 0;
+          border-bottom: none;
+        }
+        .campusName {
+          margin-bottom: 10px;
+        }
+        .naturalClassName, .campusName {
+          font-size: 32px;
+          color: #888888;
+        }
+      }
+    }
+  }
+
+  .addFab {
+    position: fixed;
+    right: 30px;
+    bottom: 100px;
+    z-index: 2;
+    :global {
+      .at-fab {
+        background:rgba(255,180,0,1);
+        box-shadow:0px 0px 4px 0px rgba(0,0,0,0.1);
+      }
+    }
+  }
+
+  .deleteModal {
+    .infoTxt {
+      color: #353535;
+      font-size: 34px;
+      font-weight: bold;
+      text-align: center;
+    }
+    .cancelBtn {
+      color: #000;
+      font-size: 34px;
+      font-weight: bold;
+    }
+
+    .okBtn {
+        color: #FF6E4A !important;
+        font-size: 34px;
+        font-weight: bold;
+    }
+  }
+}
+
